@@ -1,0 +1,68 @@
+packages:
+  - "./"
+  - "!testing/playwright/"
+  - "!testing/artillery/"
+overrides:
+  "@grpc/grpc-js": ^1.14.4
+  "@nuxt/kit": 4.5.0
+  "@nuxt/schema": 4.5.0
+  "@storybook/builder-vite": 9.1.20
+  "@storybook/vue3-vite": 9.1.20
+  "@storybook/vue3": 9.1.20
+  "@vue/compiler-core": 3.5.40
+  "@vue/compiler-dom": 3.5.40
+  "@vue/compiler-sfc": 3.5.40
+  "@vue/compiler-ssr": 3.5.40
+  "@vue/shared": 3.5.40
+  esbuild: 0.28.1
+  globals: 17.6.0
+  h3: 1.15.11
+  import-in-the-middle: 1.15.0
+  serialize-javascript: 7.0.5
+  tar: ^7.5.21
+  unicorn-magic: 0.4.0
+  svgo: ^4.0.1
+  vue: 3.5.40
+  lodash: ^4.18.1
+  lodash-es: ^4.18.1
+  sharp: ^0.35.3
+  "@opentelemetry/propagator-jaeger@<2.9.0": ^2.9.0
+  adm-zip@<0.6.0: ^0.6.0
+  ajv@<6.14.0: ^6.14.0
+  axios: ^1.18.1
+  brace-expansion@>=3.0.0 <5.0.7: ^5.0.7
+  sharp@<0.35.0: ^0.35.0
+  tmp: ^0.2.6
+  uuid@<11.1.1: ^11.1.1
+strictPeerDependencies: false
+preferWorkspacePackages: false
+publicHoistPattern:
+  - "*"
+packageImportMethod: clone-or-copy
+nodeLinker: hoisted
+ignoreWorkspaceRootCheck: true
+allowBuilds:
+  "@contentstack/cli": false
+  "@contentstack/marketplace-sdk": false
+  "@parcel/watcher": false
+  contentful-cli: false
+  core-js: false
+  es5-ext: false
+  esbuild: false
+  protobufjs: false
+  sharp: false
+  spawn-sync: false
+  unrs-resolver: false
+  vue-demi: false
+  yarn: false
+minimumReleaseAgeExclude:
+  - "@scayle/storefront-product-listing@2.6.0"
+  - tmp@0.2.4 || 0.2.6
+  - ajv@6.14.0
+  - axios@1.13.5 || 1.15.0 || 1.15.1 || 1.15.2 || 1.16.0 || 1.18.0
+  - uuid@11.1.1
+  - adm-zip@0.6.0
+  - brace-expansion@5.0.7
+  - "@opentelemetry/propagator-jaeger@2.9.0"
+  - svgo@4.0.2
+  - sharp@0.35.0
