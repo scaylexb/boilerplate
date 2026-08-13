@@ -33,7 +33,7 @@ export const shops: ShopAndLocaleConfig[] = [
   {
     locale: "de-DE",
     code: "de",
-    shopId: 10001,
+    shopId: 10000,
     currency: "EUR",
     isDefault: true,
     translationFile: "de_DE.json",
